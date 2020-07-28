@@ -8,3 +8,7 @@ export const LOADING_USER = 'LOADING_USER'
 export const SET_ERRORS = 'SET_ERRORS'
 export const LOADING_UI = 'LOADING_UI'
 export const CLEAR_ERRORS = 'CLEAR_ERRORS'
+
+// Data reducer types
+export const LIKE_SCREAM = 'LIKE_SCREAM';
+export const UNLIKE_SCREAM = 'UNLIKE_SCREAM';
