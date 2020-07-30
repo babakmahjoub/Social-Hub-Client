@@ -151,33 +151,33 @@ class Profile extends Component {
           </div>
         </Paper>
       ) : (
-          <Paper className={classes.paper}>
-            <Typography variant="body2" align="center">
-              No profile found, please login again
+        <Paper className={classes.paper}>
+          <Typography variant="body2" align="center">
+            No profile found, please login again
           </Typography>
-            <div className={classes.buttons}>
-              <Button
-                variant="contained"
-                color="primary"
-                component={Link}
-                to="/login"
-              >
-                Login
+          <div className={classes.buttons}>
+            <Button
+              variant="contained"
+              color="primary"
+              component={Link}
+              to="/login"
+            >
+              Login
             </Button>
-              <Button
-                variant="contained"
-                color="secondary"
-                component={Link}
-                to="/signup"
-              >
-                Signup
+            <Button
+              variant="contained"
+              color="secondary"
+              component={Link}
+              to="/signup"
+            >
+              Signup
             </Button>
-            </div>
-          </Paper>
-        )
+          </div>
+        </Paper>
+      )
     ) : (
-        <p>loading...</p>
-      );
+      <p>loading...</p>
+    );
 
     return profileMarkup;
   }

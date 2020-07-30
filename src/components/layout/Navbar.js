@@ -31,18 +31,18 @@ class Navbar extends Component {
               </MyButton>
             </Fragment>
           ) : (
-              <Fragment>
-                <Button color="inherit" component={Link} to="/login">
-                  Login
+            <Fragment>
+              <Button color="inherit" component={Link} to="/login">
+                Login
               </Button>
-                <Button color="inherit" component={Link} to="/">
-                  Home
+              <Button color="inherit" component={Link} to="/">
+                Home
               </Button>
-                <Button color="inherit" component={Link} to="/signup">
-                  Signup
+              <Button color="inherit" component={Link} to="/signup">
+                Signup
               </Button>
-              </Fragment>
-            )}
+            </Fragment>
+          )}
         </Toolbar>
       </AppBar>
     );
