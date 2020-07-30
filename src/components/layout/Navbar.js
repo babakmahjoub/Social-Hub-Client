@@ -2,8 +2,8 @@ import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import MyButton from '../util/MyButton';
-import PostScream from './PostScream';
+import MyButton from '../../util/MyButton';
+import PostScream from '../scream/PostScream';
 // MUI stuff
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -31,18 +31,18 @@ class Navbar extends Component {
               </MyButton>
             </Fragment>
           ) : (
-            <Fragment>
-              <Button color="inherit" component={Link} to="/login">
-                Login
+              <Fragment>
+                <Button color="inherit" component={Link} to="/login">
+                  Login
               </Button>
-              <Button color="inherit" component={Link} to="/">
-                Home
+                <Button color="inherit" component={Link} to="/">
+                  Home
               </Button>
-              <Button color="inherit" component={Link} to="/signup">
-                Signup
+                <Button color="inherit" component={Link} to="/signup">
+                  Signup
               </Button>
-            </Fragment>
-          )}
+              </Fragment>
+            )}
         </Toolbar>
       </AppBar>
     );
