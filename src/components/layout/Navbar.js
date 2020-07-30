@@ -4,13 +4,13 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import MyButton from '../../util/MyButton';
 import PostScream from '../scream/PostScream';
+import Notifications from './Notifications';
 // MUI stuff
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 // Icons
 import HomeIcon from '@material-ui/icons/Home';
-import Notifications from '@material-ui/icons/Notifications';
 
 class Navbar extends Component {
   render() {
@@ -26,23 +26,21 @@ class Navbar extends Component {
                   <HomeIcon />
                 </MyButton>
               </Link>
-              <MyButton tip="Notifications">
-                <Notifications />
-              </MyButton>
+              <Notifications />
             </Fragment>
           ) : (
-            <Fragment>
-              <Button color="inherit" component={Link} to="/login">
-                Login
+              <Fragment>
+                <Button color="inherit" component={Link} to="/login">
+                  Login
               </Button>
-              <Button color="inherit" component={Link} to="/">
-                Home
+                <Button color="inherit" component={Link} to="/">
+                  Home
               </Button>
-              <Button color="inherit" component={Link} to="/signup">
-                Signup
+                <Button color="inherit" component={Link} to="/signup">
+                  Signup
               </Button>
-            </Fragment>
-          )}
+              </Fragment>
+            )}
         </Toolbar>
       </AppBar>
     );
