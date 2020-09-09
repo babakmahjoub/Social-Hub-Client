@@ -23,6 +23,8 @@ import axios from 'axios';
 
 const theme = createMuiTheme(themeObject);
 
+axios.defaults.baseURL = 'https://asia-northeast1-socialhub-2020.cloudfunctions.net/api'
+
 const token = localStorage.FBIdToken;
 if (token) {
   const decodedToken = jwtDecode(token);
